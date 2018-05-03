@@ -1,0 +1,129 @@
+@font-face {
+    font-family: 'Sarala-Bold';
+    src:url('fonts/Sarala-Bold.ttf.woff') format('woff'),
+        url('fonts/Sarala-Bold.ttf.svg#Sarala-Bold') format('svg'),
+        url('fonts/Sarala-Bold.ttf.eot'),
+        url('fonts/Sarala-Bold.ttf.eot?#iefix') format('embedded-opentype'); 
+        font-weight: normal;
+        font-style: normal;
+}
+
+
+
+/*
+
+*/
+
+#S, #rest {
+    stroke: black;
+    stroke-width:1px;
+    fill: black;
+}
+
+.header {
+   /* = position: fixed; */
+    width:100%;
+    background-color:white;
+  /*   margin: auto; */
+    
+    
+    
+}
+.logo {
+    width:20%;    
+    
+}
+
+#Nav
+{
+    background-color: white;
+    text-align: center;
+    z-index: 99;
+}
+
+.NavRow
+{
+    text-align: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    
+    
+}
+
+.NavRow li {
+    display:inline;
+    /* float:right; */
+}
+
+
+.NavRow a{
+    display: inline-block;
+    color: black;
+    padding:10px;
+    
+    text-decoration: none;
+}
+
+
+#S {
+  stroke-dasharray: 3400;
+  stroke-dashoffset: 0;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  /* animation-duration: 2s;
+  animation-name: drawS; */
+  
+  /* animation-direction: normal;
+  animation-timing-function:linear 0s forwards; */
+}
+
+/* @keyframes drawS {
+  from {
+    stroke-dashoffset: -3400;
+  }
+
+  to {
+    stroke-dashoffset: 0;
+  }
+from{
+ fill:transparent;
+}
+to {
+      fill: black;  
+    }
+}     */
+
+#rest {
+    stroke-dasharray: 9700;
+    stroke-dashoffset: 0;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    fill:black;
+   /*  animation-duration: 2s;
+    animation-name: drawRest;
+    animation-direction: normal;
+    animation-timing-function:linear 0s forwards; */
+}
+
+@keyframes drawRest {
+  /* from {
+    stroke-dashoffset: -9700;
+  }
+  
+  to {
+    stroke-dashoffset: 0;
+  }
+   from{
+     fill:transparent;
+    }
+    to {
+      fill: black;  
+    } */
+}    
+
+
+.vigenette {
+    
+    box-shadow: 0 0 200px rgba(0,0,0,0.9) inset;
+}
