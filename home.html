@@ -12,9 +12,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
     
-    <script src="lib/jquery.loadingbar.min.js"></script>
-    
-    <link rel="stylesheet" href="style/loadingbar.css">
     
     <link rel="stylesheet" href="style/general.css">
     
@@ -64,9 +61,9 @@
         <div id="Nav" style="z-index: 99;">
                 <ul class="NavRow">
 
-                <li><a href="./portfollio/" class="load-call">Portfollio</a></li>
-                <li><a href="./about/" class="load-call">About</a></li>
-                <li><a href="./contact/" class="load-call">Contact</a></li>
+                <li><a href="./portfollio/" >Portfollio</a></li>
+                <li><a href="./about/" >About</a></li>
+                <li><a href="./contact/" >Contact</a></li>
             </ul>
         </div>
         
@@ -163,24 +160,6 @@
   });
 	
 
-		$(".load-call").loadingbar({
-			target: "#loadingbar-frame",
-			replaceURL: false,
-			direction: "right",
-
-			/* Default Ajax Parameters.  */
-			async: true, 
-			complete: function(xhr, text) {},
-			cache: true,
-			error: function(xhr, text, e) {},
-			global: true,
-			headers: {},
-			statusCode: {},
-			success: function(data, text, xhr) {},
-			dataType: "html",
-			done: function(data) {}
-		});
-	
 	
 	
     
