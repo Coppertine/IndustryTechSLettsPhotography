@@ -1,17 +1,26 @@
-@font-face {
-    font-family: 'Sarala-Bold';
-    src:url('fonts/Sarala-Bold.ttf.woff') format('woff'),
-        url('fonts/Sarala-Bold.ttf.svg#Sarala-Bold') format('svg'),
-        url('fonts/Sarala-Bold.ttf.eot'),
-        url('fonts/Sarala-Bold.ttf.eot?#iefix') format('embedded-opentype'); 
-        font-weight: normal;
-        font-style: normal;
+/* Import Fonts */
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Tajawal');
+
+
+
+
+/* Custom Fonts */
+.font-Mont
+{
+	font-family: 'Montserrat', sans-serif;
+
+}
+
+.font-Taj
+{
+	font-family: 'Tajawal', sans-serif;
 }
 
 
 
 /*
-
+SVG Style
 */
 
 #S, #rest {
@@ -20,6 +29,71 @@
     fill: black;
 }
 
+
+#S {
+  stroke-dasharray: 3400;
+  stroke-dashoffset: 0;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+	
+	  /* animation-duration: 2s;
+  animation-name: drawS; */
+  
+  /* animation-direction: normal;
+  animation-timing-function:linear 0s forwards; */
+
+
+/* @keyframes drawS {
+  from {
+    stroke-dashoffset: -3400;
+  }
+
+  to {
+    stroke-dashoffset: 0;
+  }
+from{
+ fill:transparent;
+}
+to {
+      fill: black;  
+    }
+}     */
+}
+
+#rest {
+    stroke-dasharray: 9700;
+    stroke-dashoffset: 0;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    fill:black;
+   /*  animation-duration: 2s;
+    animation-name: drawRest;
+    animation-direction: normal;
+    animation-timing-function:linear 0s forwards; */
+}
+
+
+
+/* Animation for SVG Logo (Not using but keeping in case of breakthrough) 
+
+@keyframes drawRest {
+  from {
+    stroke-dashoffset: -9700;
+  }
+  
+  to {
+    stroke-dashoffset: 0;
+  }
+   from{
+     fill:transparent;
+    }
+    to {
+      fill: black;  
+    }
+}    
+*/
+
+/* Header Style */
 .header {
    /* = position: fixed; */
     width:100%;
@@ -29,11 +103,28 @@
     
     
 }
+
+/* Logo Sizing */
 .logo {
-    width:20%;    
+    width:80%;
+		
     
 }
 
+
+/* Custom Colours */
+.color-nickel
+{
+	background-color:#6E7271;
+}
+
+.color-text-white
+{
+	color: white;
+}
+
+
+/* Navigation Style */
 #Nav
 {
     background-color: white;
@@ -61,69 +152,19 @@
     display: inline-block;
     color: black;
     padding:10px;
-    
+    font-size:120%;
     text-decoration: none;
 }
 
 
-#S {
-  stroke-dasharray: 3400;
-  stroke-dashoffset: 0;
-  stroke-linecap: round;
-  stroke-linejoin: round;
-  /* animation-duration: 2s;
-  animation-name: drawS; */
-  
-  /* animation-direction: normal;
-  animation-timing-function:linear 0s forwards; */
+
+/* Footer Styling */
+
+.copyright {
+	
+	text-align: center;
+	justify-content:center;
 }
 
-/* @keyframes drawS {
-  from {
-    stroke-dashoffset: -3400;
-  }
-
-  to {
-    stroke-dashoffset: 0;
-  }
-from{
- fill:transparent;
-}
-to {
-      fill: black;  
-    }
-}     */
-
-#rest {
-    stroke-dasharray: 9700;
-    stroke-dashoffset: 0;
-    stroke-linecap: round;
-    stroke-linejoin: round;
-    fill:black;
-   /*  animation-duration: 2s;
-    animation-name: drawRest;
-    animation-direction: normal;
-    animation-timing-function:linear 0s forwards; */
-}
-
-@keyframes drawRest {
-  /* from {
-    stroke-dashoffset: -9700;
-  }
-  
-  to {
-    stroke-dashoffset: 0;
-  }
-   from{
-     fill:transparent;
-    }
-    to {
-      fill: black;  
-    } */
-}    
 
 
-.vigenette {
-    
-    box-shadow: 0 0 200px rgba(0,0,0,0.9) inset;
-}
